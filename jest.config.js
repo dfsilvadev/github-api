@@ -12,6 +12,7 @@ module.exports = {
   },
   collectCoverageFrom: [
     "src/**/*.ts(x)?",
+    "!src/App.tsx",
     "!src/main.tsx",
     "!src/vite-env.d.ts",
     "!src/**/*.stories.ts(x)",
