@@ -18,8 +18,7 @@ ${({ theme }) => css`
   }
   html,
   body {
-    background: ${theme.colors.background};
-    color: ${theme.colors.text};
+    background: ${theme.colors.secondary};
     transition: background 0.15s ease-in-out;
   }
   body {
@@ -55,7 +54,7 @@ ${({ theme }) => css`
   }
   a,
   p {
-    font-size: ${theme.font.sizes.medium};
+    font-size: ${theme.font.sizes.small};
   }
   button {
     cursor: pointer;
