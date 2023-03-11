@@ -16,12 +16,16 @@ module.exports = {
     "!src/main.tsx",
     "!src/vite-env.d.ts",
     "!src/**/*.stories.ts(x)",
+    "!src/**/*.d.ts",
+    "!src/components/index.ts",
     "!src/stories/*.ts(x)",
     "!src/@types/*d.ts",
     "!src/pages/**/*.ts(x)",
+    "!src/routes/index.ts",
     "!src/styles/index.ts",
     "!src/styles/global-styles.ts",
     "!src/styles/**/*.ts(x)",
+    "!src/template/index.ts",
     "!src/utils/*.ts(x)"
   ]
 };
