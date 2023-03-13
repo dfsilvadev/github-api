@@ -5,9 +5,7 @@ import * as S from "./styles";
 const Base = () => {
   return (
     <S.Main aria-label="Main">
-      <S.Container aria-label="Content">
-        <Outlet />
-      </S.Container>
+      <Outlet />
     </S.Main>
   );
 };

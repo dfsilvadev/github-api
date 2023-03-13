@@ -12,14 +12,6 @@ describe("Base", () => {
       height: "100vh"
     });
 
-    expect(screen.getByLabelText("Content")).toHaveStyle({
-      width: "100%",
-      "max-width": "45rem",
-      height: "100%",
-      margin: "0 auto",
-      padding: "2.5rem 1rem"
-    });
-
     expect(container).toMatchSnapshot();
   });
 });

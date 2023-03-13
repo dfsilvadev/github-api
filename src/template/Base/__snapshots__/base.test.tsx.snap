@@ -6,23 +6,10 @@ exports[`Base should render without error 1`] = `
   height: 100vh;
 }
 
-.c1 {
-  width: 100%;
-  max-width: 45rem;
-  height: 100%;
-  margin: 0 auto;
-  padding: 2.5rem 1rem;
-}
-
 <div>
   <main
     aria-label="Main"
     class="c0"
-  >
-    <div
-      aria-label="Content"
-      class="c1"
-    />
-  </main>
+  />
 </div>
 `;
