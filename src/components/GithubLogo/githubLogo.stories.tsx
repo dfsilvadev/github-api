@@ -4,7 +4,7 @@ import { ComponentProps } from "react";
 import GithubLogo from ".";
 
 export default {
-  title: "Brandi/Logo",
+  title: "Brand/Logo",
   component: GithubLogo,
   argTypes: {
     size: {
@@ -31,7 +31,7 @@ export default {
       control: { type: "select" },
       table: {
         defaultValue: {
-          summary: "md"
+          summary: "text"
         },
         type: {
           summary: "Mostrar opções de cores para o logo",
@@ -49,6 +49,6 @@ export default {
   }
 } as Meta;
 
-export const Basic: Story<ComponentProps<typeof GithubLogo>> = ({
+export const Base: Story<ComponentProps<typeof GithubLogo>> = ({
   ...props
 }) => <GithubLogo {...props} />;
