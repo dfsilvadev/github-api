@@ -8,7 +8,7 @@ module.exports = {
   modulePaths: ["<rootDir>/src", "<rootDir>/.jest"],
   moduleNameMapper: {
     "\\.(gif|ttf|eot|svg|png)$": "<rootDir>/.jest/mocks/fileMock.ts",
-    "\\.(css|less|sass|scss)$": "identity-obj-proxy"
+    "^.+\\.module\\.(css|sass|scss)$": "identity-obj-proxy"
   },
   collectCoverageFrom: [
     "src/**/*.ts(x)?",
@@ -27,5 +27,9 @@ module.exports = {
     "!src/styles/**/*.ts(x)",
     "!src/template/index.ts",
     "!src/utils/*.ts(x)"
-  ]
+  ],
+  transform: {
+    "^.+\\.tsx?$": "ts-jest",
+    "^.+\\.(js|jsx|ts|tsx)$": "babel-jest"
+  }
 };
