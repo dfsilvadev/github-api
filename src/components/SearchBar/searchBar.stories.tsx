@@ -1,11 +1,26 @@
 import { Meta, Story } from "@storybook/react/types-6-0";
-import SearchBar from ".";
 import { ComponentProps } from "react";
+
+import SearchBar from ".";
 
 export default {
   title: "Form/Search Bar",
   component: SearchBar,
-  argTypes: {},
+  argTypes: {
+    placeholder: {
+      name: "Placeholder",
+      description: "Define o conteúdo do placeholder."
+    },
+    hasIcon: {
+      name: "Icon",
+      description: "Opcional, define se o search icon será renderizado.",
+      table: {
+        defaultValue: {
+          summary: false
+        }
+      }
+    }
+  },
   args: {
     placeholder: "Search",
     hasIcon: true

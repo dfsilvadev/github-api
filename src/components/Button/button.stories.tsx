@@ -12,7 +12,7 @@ export default {
     size: {
       name: "Button size",
       type: { name: "string" },
-      description: "Opções de tamanho para o componente Button",
+      description: "Opções de tamanho para o componente Button.",
       options: ["sm", "md", "lg"],
       control: { type: "select" },
       table: {
@@ -20,27 +20,39 @@ export default {
           summary: "md"
         },
         type: {
-          summary: "Mostrar opções de tamanho para o logo",
+          summary: "Mostrar opções de tamanho para o logo.",
           detail: "sm (small), md (medium), lg (large)"
         }
       }
     },
     children: {
-      description: "O children define o conteúdo do button.",
+      name: "Button children",
+      description: "O children define o conteúdo do button."
+    },
+    fullWidth: {
+      name: "Full width",
+      description: "Opcional, define se o button terá 100% do tamanho do pai."
+    },
+    icon: {
+      name: "Button with icon",
+      description:
+        "Opcional, possibilita adicionar ícones ao conteúdo do button."
+    },
+    as: {
+      name: "As",
+      description:
+        "Opcional, define se o componente será renderizado como button ou link.",
       table: {
         type: {
-          summary: "Tipos de children",
-          detail: "string, img, svg, jsx"
+          summary: "Tipos",
+          detail: "button ou a"
         }
       }
     },
-    fullWidth: {
+    minimal: {
+      name: "Button minimal",
       description:
-        "Essa propriedade define se o button ocupará 100% do tamanho do elemento pai."
-    },
-    icon: {
-      description:
-        "com essa propriedade é possível renderizar um icon no button"
+        "Opcional, remove os estilos de button renderizando apenas o texto."
     }
   },
   args: {
