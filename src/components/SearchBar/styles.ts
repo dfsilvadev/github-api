@@ -5,7 +5,7 @@ export const Form = styled.form`
     width: 100%;
     padding: ${theme.spacings.xxsmall};
     border-radius: ${theme.border.radius};
-    background-color: ${theme.colors.panel};
+    background-color: ${theme.colors.cover};
     outline-offset: ${theme.border.outlineOffiset};
     border: 2px solid transparent;
 
@@ -15,7 +15,7 @@ export const Form = styled.form`
 
     &:focus-within {
       outline-offset: ${theme.border.outlineOffiset};
-      border: 2px solid ${theme.colors.primary};
+      border: 2px solid ${theme.colors.red};
     }
 
     input[type="search"] {
@@ -27,7 +27,7 @@ export const Form = styled.form`
     }
 
     svg {
-      color: ${theme.colors.primary};
+      color: ${theme.colors.red};
     }
   `}
 `;
