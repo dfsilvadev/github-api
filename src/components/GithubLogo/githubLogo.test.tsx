@@ -28,35 +28,35 @@ describe("Github Logo", () => {
     });
   });
 
-  it("should render #FFF color by default", () => {
+  it("should render #C4C4CC color by default", () => {
     renderWithTheme(<GithubLogo />);
 
     expect(screen.getByLabelText("Github Logo").parentElement).toHaveStyle({
-      color: "#FFF"
+      color: "#C4C4CC"
     });
   });
 
   it("should render #FE5873 color when primary passed", () => {
-    renderWithTheme(<GithubLogo color="primary" />);
+    renderWithTheme(<GithubLogo color="red" />);
 
     expect(screen.getByLabelText("Github Logo").parentElement).toHaveStyle({
       color: "#FE5873"
     });
   });
 
-  it("should render #393656 color when panel passed", () => {
-    renderWithTheme(<GithubLogo color="panel" />);
+  it("should render #FFF color when panel passed", () => {
+    renderWithTheme(<GithubLogo color="white" />);
 
     expect(screen.getByLabelText("Github Logo").parentElement).toHaveStyle({
-      color: "#393656"
+      color: "#FFF"
     });
   });
 
-  it("should render #343150 color when cover passed", () => {
+  it("should render #202024 color when cover passed", () => {
     renderWithTheme(<GithubLogo color="cover" />);
 
     expect(screen.getByLabelText("Github Logo").parentElement).toHaveStyle({
-      color: "#343150"
+      color: "#202024"
     });
   });
 });

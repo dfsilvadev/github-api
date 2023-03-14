@@ -38,14 +38,15 @@ const theme = {
   },
 
   colors: {
-    primary: "#FE5873",
-    secondary: "#4A466C",
-    grayDark: "#555555",
-    text: "#FFFFFF",
-    light: "#E0E0E0",
-    panel: "#393656",
-    cover: "#343150",
-    skeleton: "rgba(57, 54, 86, 0.5)"
+    background: "#121214",
+    cover: "#202024",
+    divider: "#323238",
+    placeholder: "#7C7C8A",
+    label: "#8D8D99",
+    text: "#C4C4CC",
+    title: "#E1E1E6",
+    white: "#FFFFFF",
+    red: "#FE5873"
   }
 } as const;
 

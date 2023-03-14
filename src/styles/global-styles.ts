@@ -18,7 +18,7 @@ ${({ theme }) => css`
   }
   html,
   body {
-    background: ${theme.colors.secondary};
+    background: ${theme.colors.background};
     transition: background 0.15s ease-in-out;
   }
   body {

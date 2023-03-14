@@ -30,7 +30,7 @@ const wrapperModifiers = {
   `,
   minimal: (theme: DefaultTheme) => css`
     background-color: transparent;
-    color: ${theme.colors.primary};
+    color: ${theme.colors.red};
     font-weight: ${theme.font.weight.bold};
   `,
   disabled: () => css`
@@ -43,7 +43,7 @@ const wrapperModifiers = {
 
 export const Wrapper = styled.button<WrapperProps>`
   ${({ theme, size, fullWidth, minimal, hasIcon, disabled }) => css`
-    background: ${theme.colors.primary};
+    background: ${theme.colors.red};
     border: 0;
     border-radius: ${theme.border.radius};
     padding: ${theme.spacings.xxsmall};
