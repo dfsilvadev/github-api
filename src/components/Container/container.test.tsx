@@ -18,6 +18,21 @@ describe("Container", () => {
     });
   });
 
+  it("should render with content center when passed", () => {
+    renderWithTheme(
+      <Container size="fixed" contentCenter>
+        <h1>Container</h1>
+      </Container>
+    );
+
+    expect(
+      screen.getByRole("heading", { name: "Container" }).parentElement
+    ).toHaveStyle({
+      display: "flex",
+      "align-items": "center",
+      "justify-content": "center"
+    });
+  });
   it("should render with max-width: 45rem when size is fixed", () => {
     const { container } = renderWithTheme(
       <Container size="fixed">

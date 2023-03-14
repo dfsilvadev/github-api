@@ -6,7 +6,8 @@ import Container from ".";
 const children = (
   <div
     style={{
-      border: "1px solid #fff"
+      backgroundColor: "#FE5873",
+      padding: "1rem 0.5rem"
     }}
   >
     Container
@@ -35,11 +36,16 @@ export default {
           detail: "fixed, fluid"
         }
       }
+    },
+    contentCenter: {
+      name: "Content center",
+      description: "Opcional, centraliza o conteúdo do container."
     }
   },
   args: {
     children,
-    size: "fluid"
+    size: "fluid",
+    contentCenter: false
   },
   parameters: {
     layout: "fullscreen"
