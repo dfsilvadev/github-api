@@ -5,10 +5,17 @@ import { ContainerProps } from "./container";
 const Container = ({
   children,
   size = "fluid",
-  contentCenter = false
+  contentCenter = false,
+  direction = "row",
+  gap = "1rem"
 }: ContainerProps) => {
   return (
-    <S.Wrapper size={size} contentCenter={contentCenter}>
+    <S.Wrapper
+      size={size}
+      contentCenter={contentCenter}
+      direction={direction}
+      gap={gap}
+    >
       {children}
     </S.Wrapper>
   );

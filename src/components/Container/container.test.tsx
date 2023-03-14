@@ -18,6 +18,20 @@ describe("Container", () => {
     });
   });
 
+  it("should render with max-width: 45rem when size is fixed", () => {
+    renderWithTheme(
+      <Container size="fixed">
+        <h1>Container</h1>
+      </Container>
+    );
+
+    expect(
+      screen.getByRole("heading", { name: "Container" }).parentElement
+    ).toHaveStyle({
+      "max-width": "45rem"
+    });
+  });
+
   it("should render with content center when passed", () => {
     renderWithTheme(
       <Container size="fixed" contentCenter>
@@ -33,9 +47,9 @@ describe("Container", () => {
       "justify-content": "center"
     });
   });
-  it("should render with max-width: 45rem when size is fixed", () => {
-    const { container } = renderWithTheme(
-      <Container size="fixed">
+  it("should render with row direction by default", () => {
+    renderWithTheme(
+      <Container size="fixed" contentCenter direction="row">
         <h1>Container</h1>
       </Container>
     );
@@ -43,7 +57,21 @@ describe("Container", () => {
     expect(
       screen.getByRole("heading", { name: "Container" }).parentElement
     ).toHaveStyle({
-      "max-width": "45rem"
+      "flex-direction": "row"
+    });
+  });
+
+  it("should render with colum direction when passed", () => {
+    const { container } = renderWithTheme(
+      <Container size="fixed" contentCenter direction="column">
+        <h1>Container</h1>
+      </Container>
+    );
+
+    expect(
+      screen.getByRole("heading", { name: "Container" }).parentElement
+    ).toHaveStyle({
+      "flex-direction": "column"
     });
 
     expect(container).toMatchSnapshot();

@@ -16,15 +16,16 @@ const wrapperModifiers = {
   `
 };
 
-export const Wrapper = styled.div<
-  Pick<ContainerProps, "size" | "contentCenter">
->`
-  ${({ theme, size, contentCenter }) => css`
+export const Wrapper = styled.div<Omit<ContainerProps, "children">>`
+  ${({ theme, size, contentCenter, direction, gap }) => css`
     height: 100%;
     margin: 0 auto;
     padding: ${theme.spacings.large} ${theme.spacings.xsmall};
 
     ${!!size && wrapperModifiers[size](theme)};
-    ${contentCenter && wrapperModifiers.contentCenter()}
+    ${contentCenter && wrapperModifiers.contentCenter()};
+
+    flex-direction: ${() => direction};
+    gap: ${() => gap};
   `}
 `;
