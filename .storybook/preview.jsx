@@ -15,14 +15,15 @@ export const parameters = {
     values: [
       {
         name: "primary",
-        value: "#4A466C"
+        value: "#121214"
       },
       {
         name: "light",
-        value: "#E0E0E0"
+        value: "#E1E1E6"
       }
     ]
-  }
+  },
+  layout: "fullscreen"
 };
 
 export const decorators = [
